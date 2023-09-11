@@ -1,0 +1,39 @@
+html {
+    background-color: #49a09d;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.main__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.container--table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 50%; 
+}
+
+.t--head {
+    background-color: #55608f;
+    height: 40px;
+}
+tr , td {
+    padding: 1rem;
+}
+
+#img-avatar {
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+tbody tr:hover {
+    background-color: #55608f;
+}
