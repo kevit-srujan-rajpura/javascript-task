@@ -1,0 +1,119 @@
+html {
+    background-color: #49a09d;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.main__container {
+    display: flex;
+}
+
+.container__head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.head--btn {
+    background-color: #55608f;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    height: 37px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+.user--table {
+    border: 0px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.usertable--head {
+    background-color: #55608f;
+    height: 40px;
+}
+
+tr,
+td {
+    padding: 1rem;
+}
+
+tr:hover {
+    background-color: #55608f;
+}
+
+#subuser {
+    background-color: #55608f;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    height: 37px;
+    width: 100px;
+    margin-left: 24rem;
+}
+
+#useradd--form {
+    display: none;
+    padding-left: 1rem;
+}
+
+#dp--img {
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+#icon {
+    color: red;
+}
+
+.del_btn {
+    background-color: inherit;
+    border: 0px;
+}
+
+.dimensons {
+    width: 30rem;
+    height: 2rem;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#formH1{
+    margin-block: 0px;
+}
+
+
+@media screen (min-width:1025) {
+    #useradd--form{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main__container {
+        flex-direction: column; /*  elements vertically */
+    }
+
+    .user--table {
+        width: 100%;
+    }
+
+    /* .user--table tr {
+        display: none; /* Hide table headers on small screens 
+    }*/
+
+    .user--table td {
+        display: block; /* display table data as block elements */
+        text-align: left;
+    }
+
+    /* Adjust spacing for inputs */
+    .dimensons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

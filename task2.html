@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_2</title>
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+    </head>
+
+<body>
+    <div class="container__head">
+        <h1>User Details</h1>
+        <button type="submit" class="head--btn" onclick="displayForm()">Add User</button>
+    </div>
+    <div class="main__container">
+        <table class="user--table">
+            <thead class="usertable--head">
+                <tr>
+                    <td>Avatar</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table> 
+            <form id="useradd--form">
+                <h1 id="formH1">Update User</h1><br><br>
+                <input type="hidden" id="userId" name="userId">
+                <label>Email</label>
+                <input type="email" id="email" class="dimensons"><br><br>
+                <label>First Name</label><br>
+                <input type="text" id="firstname" class="dimensons"><br><br>
+                <label>Last Name</label><br>
+                <input type="text" id="lastname" class="dimensons"><br><br>
+                <label>Avatar</label><br>
+                <input type="url" id="avtarlink" class="dimensons"><br><br>
+                <button type="submit" id="subuser">Submit</button>
+            </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="task2.js"></script>
+</body>
+
+</html>
